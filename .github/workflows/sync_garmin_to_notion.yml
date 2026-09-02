@@ -34,7 +34,4 @@ jobs:
           GARMIN_ACTIVITIES_FETCH_LIMIT: ${{ inputs.GARMIN_ACTIVITIES_FETCH_LIMIT || '10' }}
           TZ: 'America/Toronto'
         run: |
-          uv run python -m src.workflows.garmin-activities
-          uv run python -m src.workflows.personal-records
           uv run python -m src.workflows.daily-steps
-          uv run python -m src.workflows.sleep-data
