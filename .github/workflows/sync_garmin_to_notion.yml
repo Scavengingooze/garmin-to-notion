@@ -35,3 +35,4 @@ jobs:
           TZ: 'Europe/Zurich'
         run: |
           uv run python -m src.workflows.daily-steps
+          uv run python -m src.workflows.sleep-data
